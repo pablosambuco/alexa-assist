@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+"""api.py: API para el tratamiento de mensajes de Alexa."""
+
+# pylint: disable=line-too-long,fixme,E1101,no-name-in-module
+
 import os
 from pathlib import Path
 import logging
@@ -16,18 +21,21 @@ LOGGER.setLevel(logging.INFO)
 
 
 class Message(BaseModel):
+    """Clase para interpretar los mensajes del POST"""
     text: str
 
 APP = FastAPI()
 
 @APP.post("/")
 async def read_post(message: Message):
+    """Tratamiento del POST"""
     LOGGER.info(msg=message.text)
     return message
 
 
 @APP.get("/{anything}")
 async def read_get(anything: str = None):
+    """Tratamiento del GET"""
     LOGGER.info(msg=anything)
     return {}
 
