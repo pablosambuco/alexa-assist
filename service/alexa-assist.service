@@ -1,0 +1,15 @@
+[Unit]
+Description=alexaalexa-assist
+After=multi-user.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/local/bin/gunicorn --reload --chdir /home/pi/alexa-assist --timeout 1000 api:APP --log-level info --access-logfile /home/pi/alexa-assist/logs/access.log --error-logfile /home/pi/alexa-assist/logs/error.log -w 4 -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:8082
+StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target
+
