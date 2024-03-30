@@ -1,5 +1,14 @@
 # Alexa-Assist
 
+[![GitHub issues](https://img.shields.io/github/issues/pablosambuco/alexa-assist?logo=github&label=Issues&logoColor=959da5&style=flat-square)](https://github.com/pablosambuco/alexa-assist/issues)
+[![Pylint](https://img.shields.io/github/actions/workflow/status/pablosambuco/alexa-assist/pylint.yml?style=flat-square&logo=github&logoColor=959da5&label=PyLint)](https://github.com/pablosambuco/alexa-assist/actions?query=workflow%3APylint)
+[![CodeQL](https://img.shields.io/github/actions/workflow/status/pablosambuco/alexa-assist/codeql-analysis.yml?style=flat-square&logo=github&logoColor=959da5&label=CodeQL)](https://github.com/pablosambuco/alexa-assist/actions?query=workflow%3ACodeQL)
+
+[![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/pablosambuco/alexa-assist?logo=python&style=flat-square&logoColor=white)](https://www.python.org/)
+[![GitHub Pipenv locked dependency version (branch)](https://img.shields.io/github/pipenv/locked/dependency-version/pablosambuco/alexa-assist/fastapi/master?logo=fastapi&style=flat-square&logoColor=white)](https://fastapi.tiangolo.com/) 
+
+[![Raspberry Pi](https://img.shields.io/badge/powered%20by-Raspberry%20Pi-C51A4A.svg?logo=raspberry-pi&style=flat-square)](https://www.raspberrypi.org)
+
 ## Description
 Alexa-Assist is a Python application leveraging FastAPI to handle POST requests from Alexa skills developed through Amazon's Developer Console (or any other service capable of initiating requests). This application is designed to receive commands from Alexa devices and execute specific programmed actions in response to those commands.
 
