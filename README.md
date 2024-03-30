@@ -4,8 +4,10 @@
 [![Pylint](https://img.shields.io/github/actions/workflow/status/pablosambuco/alexa-assist/pylint.yml?style=flat-square&logo=github&logoColor=959da5&label=PyLint)](https://github.com/pablosambuco/alexa-assist/actions?query=workflow%3APylint)
 [![CodeQL](https://img.shields.io/github/actions/workflow/status/pablosambuco/alexa-assist/codeql-analysis.yml?style=flat-square&logo=github&logoColor=959da5&label=CodeQL)](https://github.com/pablosambuco/alexa-assist/actions?query=workflow%3ACodeQL)
 
-[![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/pablosambuco/alexa-assist?logo=python&style=flat-square&logoColor=white)](https://www.python.org/)
-[![GitHub Pipenv locked dependency version (branch)](https://img.shields.io/github/pipenv/locked/dependency-version/pablosambuco/alexa-assist/fastapi/master?logo=fastapi&style=flat-square&logoColor=white)](https://fastapi.tiangolo.com/) 
+[![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/pablosambuco/alexa-assist?style=flat-square&logo=python&logoColor=white)
+](https://www.python.org/)
+[![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/pablosambuco/alexa-assist/fastapi?style=flat-square&logo=fastapi&logoColor=white)
+](https://fastapi.tiangolo.com/) 
 
 [![Raspberry Pi](https://img.shields.io/badge/powered%20by-Raspberry%20Pi-C51A4A.svg?logo=raspberry-pi&style=flat-square)](https://www.raspberrypi.org)
 
