@@ -4,8 +4,10 @@
 # pylint: disable=line-too-long,fixme,E1101,no-name-in-module
 
 import os
+import time
 from pathlib import Path
 import logging
+import json
 from logging.handlers import RotatingFileHandler
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -29,15 +31,18 @@ APP = FastAPI()
 @APP.post("/")
 async def read_post(message: Message):
     """Tratamiento del POST"""
-    LOGGER.info(msg=message.text)
-    return message
-
-
-@APP.get("/{anything}")
-async def read_get(anything: str = None):
-    """Tratamiento del GET"""
-    LOGGER.info(msg=anything)
-    return {}
+    req = json.loads(message.text)
+    accion = req.keys()[0]
+    contenido = req.values()[0]
+    respuesta = ""
+    if accion=="log":
+        LOGGER.info(msg=contenido)
+        respuesta = "log ok"
+    elif accion == "get":
+        if contenido == "time":
+            respuesta = time.srtftime("%H:%M",time.localtime())
+            LOGGER.info(msg="get time")
+    return respuesta
 
 
 def get_interface():
